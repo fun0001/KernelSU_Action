@@ -293,7 +293,7 @@ jobs:
       if: env.CHECK_DTBO_IS_OK == 'true'
       uses: actions/upload-artifact@v3
       with:
-        name: dtbo-${{ env.DEVICE }}-${{ env.BUILD_TIME }}
+        name: dtbo-dipper-${{ env.BUILD_TIME }}
         path: kernel_workspace/android-kernel/out/arch/${{ env.ARCH }}/boot/dtbo.img
 
     - name: Upload boot image
